@@ -17,7 +17,7 @@ on:
         required: false
         description: Version of Node to use for setup-node
         type: string
-        default: 20.x
+        default: 22.x
 
 permissions:
   contents: read
