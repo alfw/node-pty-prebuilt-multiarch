@@ -41,9 +41,3 @@ jobs:
       - run: yarn build
       - run: yarn
       - run: yarn test
-      - name: Simulate Publishing to NPM
-        if: ${{ inputs.dryrun }}
-        run: npm publish --access public --dry-run
-      - name: Publish to NPM
-        if: ${{ !inputs.dryrun }}
-        run: npm publish --access public
